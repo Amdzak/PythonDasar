@@ -18,6 +18,7 @@
             jika di isi : nilainya ada 3 0:5:3 (nilai awal:nilai akhir:increment atau lompat)
     min()   mengambil nilai paling kecil dari assci code
     max()   mengambil nilai paling besar dari acsii code
+    count() menghitung jumlah yang ada 
 """
 
 nama = 'Amdzak'
@@ -31,7 +32,10 @@ ada = tujuan in nama
 
 print("apakah " + tujuan +" ada di dalam nama Amdzak? " + str(ada))
 
-nama = "Kucing Salto"
+nama = "Kucing Salto haha"
 print("huruf terakhir di nama Kucing Salto adalah " + nama[-1])
 print("index ke 0 sampai 4 dari nama Kucing Salto =  " + nama[0:4])
 print("index ke 0 sampai terakhir tetapi loncat 2 dari nama Kucing Salto =  " + nama[0:-1:2])
+
+hitung = nama.count("a") # akan menghitung suatu nilai yang ada pada isian tertenru
+print(hitung)
