@@ -1,5 +1,5 @@
 """ 
-    String
+    String & STRING METHOD
 
     didalam python kita dapat menggunakan string dengan cara membuat single quote '....' 
                                                                      atau double "...."
@@ -19,6 +19,16 @@
     min()   mengambil nilai paling kecil dari assci code
     max()   mengambil nilai paling besar dari acsii code
     count() menghitung jumlah yang ada 
+
+    STRING METHOD
+    ada beberapa method dalam string yang sangat berguna 
+    "".join(data)          untuk melakukan join pada suatu tulisan bisa di gunakan pada list
+    .split(separator)      untuk membuat tulisan menjadi list dan di pisah berdasarkan separator tertentu
+    .uper()                untuk melakukan uppercase sebuah tulisan
+    .lower()               untuk melakukan lowercase sebuah tulisan
+    .center(int,data)      untuk membuat tulisan bisa rata tengah jika data di isi maka akan menghasilkan nilai bebas jika int di isi maka akan membuatakan sebuah spasi sesui keiginan
+      .rjust               sama seperti center tapi dia rata kanan (right)
+      .ljust               sama seperti ljust tapi dai rata kiri (left)
 """
 
 nama = 'Amdzak'
@@ -39,3 +49,31 @@ print("index ke 0 sampai terakhir tetapi loncat 2 dari nama Kucing Salto =  " + 
 
 hitung = nama.count("a") # akan menghitung suatu nilai yang ada pada isian tertenru
 print(hitung)
+
+
+# METHOD STRING
+data1 = "halooo"
+uper = data1.upper()
+print(uper)
+
+data = "KUCING SALTO"
+lower = data.lower()
+print(lower)
+
+data2 = ["kucing","Salto","kucing"]
+join = " ".join(data2)
+print(join)
+
+data3 = "kucing lompat kucing hewan"
+split = data3.split(" ")
+print(split)
+
+data4 = "Selamat Datang"
+center = data4.center(20,"=")
+print(center)
+
+ljust = data4.ljust(20,"#")
+print(ljust)
+
+rjust = data4.rjust(20,"#")
+print(rjust)
